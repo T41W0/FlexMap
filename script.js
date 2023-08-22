@@ -21,9 +21,10 @@ function onSucess(position){
     .then(response => response.json())
     .then(result =>{
         let alldetails = result.results[0].components;
-        let{county,postcode,country} = alldetails;
+        let{county,suburb,country} = alldetails;
         //console.log(county,postcode,country);
-        location.innerText = `${county} ${postcode} ${country}`;
+        const locations = document.querySelector("#location")
+        locations.innerText = `${county} ${suburb} ${country}`;
         console.table(alldetails);
         button.innerText = "Detect Your Location";
     }).catch(() => {
