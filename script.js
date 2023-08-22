@@ -21,11 +21,10 @@ function onSucess(position){
     .then(response => response.json())
     .then(result =>{
         let alldetails = result.results[0].components;
-        let{county,suburb,country} = alldetails;
+        let{continent,country,road, county,state,suburb,village} = alldetails;
         //console.log(county,postcode,country);
         const locations = document.querySelector("#location")
-        locations.innerText = `${county} ${suburb} ${country}`;
-        console.table(alldetails);
+        locations.innerHTML = `<p>Continent:${continent},<br/>Road:${road},<br/>County:${county},<br/>State:${state},<br/>Suburb:${suburb},<br/>Village:${village} </p>`;        console.table(alldetails);
         button.innerText = "Detect Your Location";
     }).catch(() => {
         button.innerText = "Something Went Wrong";

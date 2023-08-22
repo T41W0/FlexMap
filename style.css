@@ -15,9 +15,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin: 30px auto;
     left: 400px;
-    position: absolute;
     background: transparent;
     backdrop-filter: blur(5px);
     padding: 20px;
@@ -43,7 +42,7 @@ body{
     border: none;
     border-radius: 25px;
     font-size: 20px;
-    position: relative;
+    font-family: poppins;
     margin-top: 200px;
     background-color: black;
     color: white;
@@ -59,4 +58,5 @@ body{
     font-size: 25px;
     font-family: poppins;
     text-align: center;
+    width: 70%;
 }
