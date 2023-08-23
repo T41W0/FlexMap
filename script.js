@@ -10,6 +10,7 @@ button.addEventListener('click', ()=>{
         button.innerText = "Your browser is not Supported"
     }
 }) 
+//SUCCESS
 function onSucess(position){
     button.innerText = "Detecting your location...";
     console.log(position);
@@ -30,6 +31,7 @@ function onSucess(position){
         button.innerText = "Something Went Wrong";
     })
 }
+//ERROR
 function onError(error) {
     //console.log(error);
     if (error.code == 1) {

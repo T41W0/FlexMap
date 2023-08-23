@@ -8,7 +8,7 @@
     src: url("poppin.ttf");
 }
 body{
-    background-image: linear-gradient(white 50%, rgb(167, 0, 167));
+    background-image: linear-gradient(to right,white 50%, rgb(167, 0, 167));
 }
 .container{
     color: black;
@@ -43,7 +43,7 @@ body{
     border-radius: 25px;
     font-size: 20px;
     font-family: poppins;
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: black;
     color: white;
     transition: 0.5s;
