@@ -42,22 +42,4 @@ function onError(error) {
         button.innerText = "Something went Wrong";
     }
     button.setAttribute("disabled", "true")
-}
-
-
-const container = document.querySelector(".container");
-window.onload = function(){
-    setTimeout(function(){
-        container.style.display = "flex"
-    },2000)
-}
-
-
-
-
-
-
-
-
-
-
+} 
