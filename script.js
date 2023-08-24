@@ -43,3 +43,10 @@ function onError(error) {
     }
     button.setAttribute("disabled", "true")
 }
+
+const container = document.querySelector(".container");
+window.onload = function(){
+    setTimeout(function () {
+        container.style.display = "flex";
+    },2000)
+}

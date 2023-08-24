@@ -82,7 +82,7 @@ body{
 }
 .container{
     color: black;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
