@@ -22,10 +22,10 @@ function onSucess(position){
     .then(response => response.json())
     .then(result =>{
         let alldetails = result.results[0].components;
-        let{continent,country,road, county,state,suburb,village} = alldetails;
+        let{continent,country,road, city,state,suburb,village} = alldetails;
         //console.log(county,postcode,country);
         const locations = document.querySelector("#location")
-        locations.innerHTML = `<p>Continent:${continent},<br/>Road:${road},<br/>County:${county},<br/>State:${state},<br/>Suburb:${suburb},<br/>Village:${village} </p>`;        console.table(alldetails);
+        locations.innerHTML = `<p>Continent:${continent},<br/>Road:${road},<br/>City:${city},<br/>State:${state},<br/>Suburb:${suburb},<br/>Village:${village} </p>`;        console.table(alldetails);
         button.innerText = "Detect Your Location";
     }).catch(() => {
         button.innerText = "Something Went Wrong";
@@ -43,3 +43,21 @@ function onError(error) {
     }
     button.setAttribute("disabled", "true")
 }
+
+
+const container = document.querySelector(".container");
+window.onload = function(){
+    setTimeout(function(){
+        container.style.display = "flex"
+    },2000)
+}
+
+
+
+
+
+
+
+
+
+
